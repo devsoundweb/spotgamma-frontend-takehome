@@ -18,6 +18,7 @@ body {
     border-radius: 8px;
     padding: 40px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    overflow-x: hidden;
 }
 
 h1 {
@@ -68,10 +69,34 @@ h1 {
 
 .grid-container {
     overflow-x: auto;
+    overflow-y: hidden;
+    max-width: 100%;
     margin-top: 20px;
     background: white;
     border-radius: 8px;
     padding: 10px;
+    border: 1px solid #e2e8f0;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: thin;
+    scrollbar-color: #94a3b8 #f1f5f9;
+}
+
+.grid-container::-webkit-scrollbar {
+    height: 10px;
+}
+
+.grid-container::-webkit-scrollbar-track {
+    background: #f1f5f9;
+    border-radius: 4px;
+}
+
+.grid-container::-webkit-scrollbar-thumb {
+    background: #94a3b8;
+    border-radius: 4px;
+}
+
+.grid-container::-webkit-scrollbar-thumb:hover {
+    background: #64748b;
 }
 
 .spreadsheet {
@@ -79,11 +104,12 @@ h1 {
     grid-template-columns: 50px repeat(10, 100px);
     grid-template-rows: 40px repeat(10, 40px);
     gap: 0;
+    width: max-content;
+    min-width: 1050px;
     border: 1px solid #cbd5e1;
     background-color: #ffffff;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.06);
     border-radius: 4px;
-    overflow: hidden;
 }
 
 .cell {
@@ -193,5 +219,6 @@ h1 {
     .spreadsheet {
         grid-template-columns: 45px repeat(10, 85px);
         grid-template-rows: 38px repeat(10, 38px);
+        min-width: 895px;
     }
 }
