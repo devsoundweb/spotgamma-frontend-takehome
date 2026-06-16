@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Live-Calculating Matrix UI</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Live-Calculating Matrix</h1>
+        <div class="info">
+            <p><strong>Supported Formulas:</strong> SUM, AVERAGE/AVG, MIN, MAX, COUNT, PRODUCT, ABS, SQRT, ROUND, POWER/POW</p>
+            <p><strong>Examples:</strong> =SUM(A1:A5), =AVERAGE(B1:B10), =POWER(A1,2), =SQRT(C3), =A1+B2*3</p>
+            <div id="error-message" class="error-message hidden"></div>
+        </div>
+        <div class="grid-container">
+            <div id="spreadsheet" class="spreadsheet"></div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>

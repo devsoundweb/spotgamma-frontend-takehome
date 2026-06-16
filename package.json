@@ -1,0 +1,25 @@
+{
+  "name": "spotgamma-frontend-takehome",
+  "version": "1.0.0",
+  "description": "A web-based spreadsheet with real-time formula evaluation and circular dependency detection",
+  "main": "index.html",
+  "scripts": {
+    "deploy": "gh-pages -d ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/devsoundweb/spotgamma-frontend-takehome.git"
+  },
+  "keywords": [
+    "spreadsheet",
+    "matrix",
+    "formulas",
+    "calculator",
+    "web-app"
+  ],
+  "author": "devsoundweb",
+  "license": "MIT",
+  "devDependencies": {
+    "gh-pages": "^6.3.0"
+  }
+}
